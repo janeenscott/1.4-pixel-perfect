@@ -30,7 +30,7 @@ def index():
     index_file = open('index.html', 'r')
     index_html = index_file.read()
 
-    index_html.replace('{{blog_posts}}', blog_post_html)
+    index = index_html.replace('{{blog_posts}}', blog_post_html)
 
     index_file.close()
 
