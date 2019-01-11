@@ -40,15 +40,15 @@ blog_html_content.append(post_html)
 
     # 7. Join all the items in your new list together into a single string. Name this string "blog_post_html".
 
-
+    blog_post_html = "-".join(blog_html_content)
 
 
     # 8. Open the index.html file and replace {{blog_posts}} with the blog post string you just created.
     index_file = open('index.html', 'r')
     index_html = index_file.read()
 
-    # index_html = index_html.replace('{{blog_posts}}', blog_post_html)
+    index_html = index_html.replace('{{blog_posts}}', blog_post_html)
 
     index_file.close()
 
-    return index_html
+        return index_html
