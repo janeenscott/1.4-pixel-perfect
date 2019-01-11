@@ -2,6 +2,10 @@
 <html>
 
 <head>
+ <!-- font library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
     <link rel="stylesheet" href="static/styles.css">
 <!-- Social Media icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,8 +24,9 @@
 <div class="social-icons">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-pinterest"></a>
 <a href="#" class="fa fa-google-plus"></a>
-<a href="#" class="fa fa-pinterest"></a>
+<a href="#" class="fa fa-instagram"></a>
 </div>
 
     <!--I don't think I need this img if I have the a tag-->
@@ -36,12 +41,22 @@
 
     <!-- Create your blog html here -->
 
-    {{blog_posts}}
+<div class="page-content">
+    <!-- This div contains the entire body content of the main page--blog posts and sidebar info -->
+
+    <div class="blog-posts>">
+        {{blog_posts}}
+    </div>
+
+<div class="bio-box">
+    <!-- This is where the bio box on right side will go -->
+</div>
 
 
 
 
 
+</div>
 
 
 </body>

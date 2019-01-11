@@ -7,10 +7,58 @@ body{
     padding: 0;
 }
 
+.social-icons{
+    display: inline-block;
+}
+
 .fa-facebook{
-    color: aquamarine;
+    color: #C2C2C2;
+    display: inline-block;
+}
+
+.fa-facebook:hover{
+    color: #E54304;
 }
 
 .fa-twitter{
-    color: aquamarine;
+    color: #C2C2C2;
+}
+.fa-twitter:hover{
+    color: #E54304;
+}
+
+
+.fa-pinterest{
+    color: #C2C2C2
+}
+.fa-pinterest:hover{
+    color: #E54304;
+}
+
+
+.fa-google-plus{
+    color: #C2C2C2
+}
+
+.fa-google-plus:hover{
+    color: #E54304;
+}
+
+
+.fa-instagram{
+    color: #C2C2C2;
+}
+
+.fa-instagram:hover{
+    color: #E54304;
+}
+
+
+.fa-search{
+    color: #C2C2C2;
+    float: right;
+}
+
+.fa-search:hover{
+    color: #E54304;
 }
