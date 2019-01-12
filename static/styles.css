@@ -5,6 +5,27 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #F4F4F4;
+}
+
+nav{
+    background-color: #F8F8F8;
+    height: 60px;
+
+}
+
+ul{
+    display: inline-block;
+    padding-left: 150px;
+}
+
+li{
+    display: inline-block;
+}
+
+.social-icons{
+    display: inline-block;
+    float: right;
 }
 
 .social-icons{
@@ -61,4 +82,15 @@ body{
 
 .fa-search:hover{
     color: #E54304;
+}
+
+header{
+    border: #E54304 solid 2px;
+    margin: auto;
+    text-align: center;
+}
+.primary-content{
+    max-width: 1200px;
+    border: aquamarine solid 2px;
+    margin: auto;
 }
