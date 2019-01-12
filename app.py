@@ -13,21 +13,36 @@ def index():
     post_html = post_file.read()
     post_file.close()
 
+    # post_html now contains a string of all the contents of post.html file
+
     # 2. Create a new list that will hold all the html for your blog posts
     blog_html_content = []
+    # this is an empty list. save it for later
 
     # 3. Open the csv file and read it using the CSV library. This will give you a list of rows.
     # See: https://docs.python.org/3/library/csv.html#csv.DictReader
 
 
     with open('data.csv') as csvfile:
-    # same as csvfile = open('data.csv') and closes after indent
+    # essentially the same as csvfile = open('data.csv') and closes after indent.
+    #   we've created a variable, opened it, and we will close it after the indent
         blog_posts = csv.DictReader(csvfile)
-        # This is saying, create a mug and name it "blog_posts" and fill it with the list from my csv file
+        # This is saying, create a variable (a container) and name it
+        #       "blog_posts" and fill it with the list from my csv file
+
+    # So now, post_html contains a string of all contents of post.html file, and
+    #      blog_posts contains (a list of?) all of the contents in csv file.
+
+    #   post.html is the framework for the individual blog post and data.csv contains the specific
+    #       info to populate into the posts
+
+    #   so posts_html needs to be populated with blog_posts
 
     # 4. Loop over each row in the CSV. Each row is a blog post.
         for post in blog_posts:
             print(post['category'], post['title'], post['body'], post['author'], post['date'], post['image'])
+
+            #prints the contents of blog_posts (a list of everything in data.csv)
 
     # 5. Take post_html and replace {{title}} {{body}} {{author}} with the data in each blog post csv row
             post_html.replace("{{category}}", post['category'])
@@ -40,6 +55,8 @@ def index():
     # 6. Add the post_html to the new list you created above.
 
             blog_html_content.append(post_html)
+            # all the contents of post.html that were read and stored in post_html are now list items
+            # in the list blog_html_content
 
     # 7. Join all the items in your new list together into a single string. Name this string "blog_post_html".
 
