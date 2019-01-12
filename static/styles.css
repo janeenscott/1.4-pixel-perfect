@@ -94,3 +94,23 @@ header{
     border: aquamarine solid 2px;
     margin: auto;
 }
+
+.post-text{
+    border: pink solid 2px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.bio-box{
+    max-width: 360px;
+    float: right;
+    border: blueviolet solid 1px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.rounded{
+    border-radius: 50%;
+}
