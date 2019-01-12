@@ -23,7 +23,7 @@ def index():
     with open('data.csv') as csvfile:
     # same as csvfile = open('data.csv') and closes after indent
         blog_posts = csv.DictReader(csvfile)
-
+        # This is saying, create a mug and name it "blog_posts" and fill it with the list from my csv file
 
     # 4. Loop over each row in the CSV. Each row is a blog post.
         for post in blog_posts:
