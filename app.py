@@ -45,12 +45,12 @@ def index():
             #prints the contents of blog_posts (a list of everything in data.csv)
 
     # 5. Take post_html and replace {{title}} {{body}} {{author}} with the data in each blog post csv row
-            post_html.replace("{{category}}", post['category'])
-            post_html.replace("{{title}}", post['title'])
-            post_html.replace("{{body}}", post['body'])
-            post_html.replace("{{author}}", post['author'])
-            post_html.replace("{{date}}", post['date' ])
-            post_html.replace("{{image}}", post['image'])
+            post_html = post_html.replace("{{category}}", post['category'])
+            post_html = post_html.replace("{{title}}", post['title'])
+            post_html = post_html.replace("{{body}}", post['body'])
+            post_html = post_html.replace("{{author}}", post['author'])
+            post_html = post_html.replace("{{date}}", post['date' ])
+            post_html = post_html.replace("{{image}}", post['image'])
 
     # 6. Add the post_html to the new list you created above.
 
