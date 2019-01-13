@@ -101,7 +101,7 @@ header{
     margin: auto;
 }
 
-.bio-box{
+.right{
     max-width: 360px;
     float: right;
     border: blueviolet solid 1px;
@@ -113,4 +113,9 @@ img{
 
 .rounded{
     border-radius: 50%;
+}
+
+.blog-posts{
+    float: left;
+    display: inline-block;
 }
