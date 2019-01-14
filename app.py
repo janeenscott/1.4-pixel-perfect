@@ -40,9 +40,12 @@ def index():
 
     # 4. Loop over each row in the CSV. Each row is a blog post.
         for post in blog_posts:
+
             print(post['category'], post['title'], post['body'], post['author'], post['date'], post['image'])
 
             #prints the contents of blog_posts (a list of everything in data.csv)
+            # Apparently, this prints to terminal, but not to the browser. I need another statement
+            # somewhere to pull and populate individual posts
 
     # 5. Take post_html and replace {{title}} {{body}} {{author}} with the data in each blog post csv row
             post_html = post_html.replace("{{category}}", post['category'])

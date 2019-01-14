@@ -94,10 +94,30 @@ header{
     border: aquamarine solid 2px;
     margin: auto;
 }
-.primary-content:after{
-    display: table;
+/* .primary-content:after{
+
     clear: both;
+} */
+
+#blogs{
+    width: 750px;
+    float: left;
+    border: yellow solid 10px;
 }
+
+.right{
+
+    width: 360px;
+    margin-left: 800px;
+    border: blueviolet solid 1px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 .post-text{
     border: pink solid 2px;
@@ -105,12 +125,10 @@ header{
     margin: auto;
 }
 
-.right{
-    max-width: 360px;
-    border: blueviolet solid 1px;
-    float: left;
-    width: 360px;
+.page-buttons{
+    clear: both;
 }
+
 
 img{
     max-width: 100%;
@@ -120,13 +138,3 @@ img{
     border-radius: 50%;
 }
 
-.blog-posts{
-    float: left;
-    display: inline-block;
-    width: 750px;
-}
-
-.pop-posts:after{
-    display: table;
-    clear: both;
-}
