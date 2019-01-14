@@ -221,14 +221,18 @@ img{
     border-radius: 50%;
     border: #FFFFFF solid 7px;
     max-width: 180px;
-    display: block;
-    margin: auto;
+    display: inline-block;
+    margin: -70px 0 auto;
+    text-align: center;
+
     /*
     transform: translate(2, 8);
      */
 }
 
-
+.center{
+    text-align: center;
+}
 
 #photo-string{
     margin: auto;

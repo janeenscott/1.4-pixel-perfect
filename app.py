@@ -24,8 +24,10 @@ def index():
 
 
     with open('data.csv') as csvfile:
+
     # essentially the same as csvfile = open('data.csv') and closes after indent.
     #   we've created a variable, opened it, and we will close it after the indent
+
         blog_posts = csv.DictReader(csvfile)
         # This is saying, create a variable (a container) and name it
         #       "blog_posts" and fill it with the list from my csv file
@@ -49,22 +51,24 @@ def index():
 
     # 5. Take post_html and replace {{title}} {{body}} {{author}} with the data in each blog post csv row
 
-            post_html = post_html.replace("{{category}}", post['category'])
-            post_html = post_html.replace("{{title}}", post['title'])
-            post_html = post_html.replace("{{body}}", post['body'])
-            post_html = post_html.replace("{{author}}", post['author'])
-            post_html = post_html.replace("{{date}}", post['date' ])
-            post_html = post_html.replace("{{image}}", post['image'])
+            unique_post = post_html
+
+            unique_post = unique_post.replace("{{category}}", post['category'])
+            unique_post = unique_post.replace("{{title}}", post['title'])
+            unique_post = unique_post.replace("{{body}}", post['body'])
+            unique_post = unique_post.replace("{{author}}", post['author'])
+            unique_post = unique_post.replace("{{date}}", post['date' ])
+            unique_post = unique_post.replace("{{image}}", post['image'])
 
     # 6. Add the post_html to the new list you created above.
 
-            blog_html_content.append(post_html)
+            blog_html_content.append(unique_post)
             # all the contents of post.html that were read and stored in post_html are now list items
             # in the list blog_html_content
 
     # 7. Join all the items in your new list together into a single string. Name this string "blog_post_html".
 
-        blog_post_html = "".join(blog_html_content)
+    blog_post_html = "".join(blog_html_content)
 
 
     # 8. Open the index.html file and replace {{blog_posts}} with the blog post string you just created.
