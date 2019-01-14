@@ -94,10 +94,6 @@ header{
     border: aquamarine solid 2px;
     margin: auto;
 }
-/* .primary-content:after{
-
-    clear: both;
-} */
 
 #blogs{
     width: 750px;
@@ -138,3 +134,13 @@ img{
     border-radius: 50%;
 }
 
+.photo-string{
+    height: auto;
+    max-width: 189px;
+    display: inline-block;
+    margin: 0px;
+}
+
+#id{
+    max-width: 100%;
+}
