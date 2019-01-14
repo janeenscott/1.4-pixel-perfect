@@ -89,10 +89,14 @@ header{
     margin: auto;
     text-align: center;
 }
-.primary-content{
+.primary-content {
     max-width: 1200px;
     border: aquamarine solid 2px;
     margin: auto;
+}
+.primary-content:after{
+    display: table;
+    clear: both;
 }
 
 .post-text{
@@ -103,8 +107,9 @@ header{
 
 .right{
     max-width: 360px;
-    float: right;
     border: blueviolet solid 1px;
+    float: left;
+    width: 360px;
 }
 
 img{
@@ -118,4 +123,10 @@ img{
 .blog-posts{
     float: left;
     display: inline-block;
+    width: 750px;
+}
+
+.pop-posts:after{
+    display: table;
+    clear: both;
 }
