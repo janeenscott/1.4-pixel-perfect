@@ -57,7 +57,7 @@ h2{
     color: #4D4D4D;
     margin-left: auto;
     margin-right: auto;
-    background: #FFFFFF;
+
     margin-top: 5px;
     margin-bottom: 5px;
 
@@ -132,17 +132,15 @@ h2{
 }
 
 header{
-    margin: auto;
+   /*why does text-align work when margin: auto didnt?*/
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 .primary-content {
     max-width: 1200px;
     margin: auto;
-    /*
-    border: aquamarine solid 1px;
-     */
 }
 
 #blogs{
@@ -154,6 +152,9 @@ header{
     background: #FFFFFF;
 }
 
+.post-footer{
+    font-style: italic;
+}
 .right{
 
     width: 360px;
@@ -161,6 +162,15 @@ header{
     /*
     border: darkred solid 1px;
      */
+}
+
+.pop-date{
+    font-style: italic;
+}
+
+/*doesn't work....why??*/
+.post-footer{
+    font-style: italic;
 }
 
 .clearfix::after {
@@ -211,21 +221,19 @@ img{
     border-radius: 50%;
     border: #FFFFFF solid 7px;
     max-width: 180px;
-    /*
-    position: absolute;
-    */
-    left: 50%;
-    right: 50%;
+    display: block;
+    margin: auto;
     /*
     transform: translate(2, 8);
      */
 }
 
+
+
 #photo-string{
-   /*
-    border: yellow solid 5px;
-    */
-    max-height: 120px;
+    margin: auto;
+    width: 1200px;
+
 }
 .photo-string {
     max-height: 100%;
@@ -237,4 +245,15 @@ img{
 
 }
 
+.fake-foot{
+    text-align: center;
+    background: #FFFFFF;
+}
+
+footer{
+    background-color: #202020;
+    color: #6F6F6F;
+    text-align: center;
+    clear: both;
+}
 
