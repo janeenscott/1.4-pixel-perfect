@@ -48,6 +48,7 @@ def index():
             # somewhere to pull and populate individual posts
 
     # 5. Take post_html and replace {{title}} {{body}} {{author}} with the data in each blog post csv row
+
             post_html = post_html.replace("{{category}}", post['category'])
             post_html = post_html.replace("{{title}}", post['title'])
             post_html = post_html.replace("{{body}}", post['body'])

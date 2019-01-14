@@ -21,14 +21,42 @@ ul{
 
 li{
     display: inline-block;
+    font-family: lato, Arial, sans-serif;
+    color: #4D4D4D
 }
+
+p{
+    font-family: lato, Arial, sans-serif;
+    color: #4D4D4D
+
+}
+
+h5{
+    font-family: Oswald, sans-serif;
+    color: #EA5512;
+}
+
+h2{
+   font-family: Oswald, sans-serif;
+    color: #4D4D4D
+}
+
+.fa-arrow-down{
+    color: #C2C2C2;
+    display: inline-block;
+}
+
+.fa-arrow-down:hover{
+    color: #E54304;
+}
+
 
 .social-icons{
     display: inline-block;
     float: right;
 }
 
-.social-icons{
+.social-icons {
     display: inline-block;
 }
 
@@ -48,7 +76,6 @@ li{
     color: #E54304;
 }
 
-
 .fa-pinterest{
     color: #C2C2C2
 }
@@ -65,7 +92,6 @@ li{
     color: #E54304;
 }
 
-
 .fa-instagram{
     color: #C2C2C2;
 }
@@ -73,7 +99,6 @@ li{
 .fa-instagram:hover{
     color: #E54304;
 }
-
 
 .fa-search{
     color: #C2C2C2;
@@ -85,27 +110,35 @@ li{
 }
 
 header{
-    border: #E54304 solid 2px;
     margin: auto;
     text-align: center;
+    margin-top: 15px;
+
 }
 .primary-content {
     max-width: 1200px;
-    border: aquamarine solid 2px;
     margin: auto;
+    /*
+    border: aquamarine solid 1px;
+     */
 }
 
 #blogs{
     width: 750px;
     float: left;
-    border: yellow solid 10px;
+    /*
+    border: grey solid 1px;
+     */
+    background: #FFFFFF;
 }
 
 .right{
 
     width: 360px;
     margin-left: 800px;
-    border: blueviolet solid 1px;
+    /*
+    border: darkred solid 1px;
+     */
 }
 
 .clearfix::after {
@@ -114,9 +147,16 @@ header{
   display: table;
 }
 
+.pop-posts{
+    background: #FFFFFF;
+}
+
+
 
 .post-text{
+    /*
     border: pink solid 2px;
+     */
     max-width: 750px;
     margin: auto;
 }
@@ -128,19 +168,28 @@ header{
 
 img{
     max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .rounded{
     border-radius: 50%;
 }
 
-.photo-string{
-    height: auto;
-    max-width: 189px;
+#photo-string{
+   /*
+    border: yellow solid 5px;
+    */
+    max-height: 120px;
+}
+.photo-string {
+    max-height: 100%;
+    max-width: 150px;
     display: inline-block;
-    margin: 0px;
+    padding: 0px;
+    margin: auto;
+    float: left;
+
 }
 
-#id{
-    max-width: 100%;
-}
+
